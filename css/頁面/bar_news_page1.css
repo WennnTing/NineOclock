@@ -71,6 +71,7 @@
     background-color: white;
     outline: none;
     border: 1px solid black;
+    color: black;
 
 }
 
@@ -78,6 +79,8 @@
     cursor: pointer;
     background-color: white;
     opacity: .8;
+    color: black;
+
 }
 
 @media (min-width:768.98px) and (max-width:991.98px) {
@@ -150,12 +153,17 @@
         background-color: white;
         outline: none;
         border: 1px solid black;
+        color: black;
+
+
     }
 
     .news_btn:hover {
         cursor: pointer;
         background-color: white;
         opacity: .8;
+        color: black;
+
     }
 }
 
@@ -229,6 +237,7 @@
         background-color: white;
         outline: none;
         border: 1px solid black;
+        color: black;
 
     }
 
@@ -236,5 +245,6 @@
         cursor: pointer;
         background-color: white;
         opacity: .8;
+        color: black;
     }
 }
