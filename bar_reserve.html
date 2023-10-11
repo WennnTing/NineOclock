@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nine O'clock</title>
+    <link rel="stylesheet" href="./css/all/all.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/頁面/bar_reserve.css">
+    <link rel="stylesheet" href="./css/all/bread.css">
+    <script src="./js/code.jquery.com_jquery-3.7.1.js"></script>
+    <script src="./js/all.js"></script>
+
+    <!--------------------- fonts--------------------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- 無襯線 -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--------------------- header--------------------->
+    <header class="header">
+
+        <div class="block">
+
+            <nav class="nav">
+                <a href="./index.html" class="logo"><img src="./image/logo2.svg" alt="首頁"></a>
+
+                <ul class="nav_list" id="ul_block">
+                    <li><a href="./bar_news.html">最新消息</a></li>
+                    <li><a href="./bar_about.html">品牌介紹</a></li>
+                    <li><a href="./bar_consumption.html">消費方式</a></li>
+                    <li><a href="./bar_type.html">餐點種類</a></li>
+                    <li><a href="./bar_taste.html">如何品嘗</a></li>
+                    <li><a href="./bar_member.html" class="current-page">會員專區</a></li>
+                </ul>
+                <img src="./image/icons/hamberger2.svg" alt="hamberger" class="hamberger" id="hamberger">
+
+                <img src="./image/icons/close.svg" alt="close" class="close" id="close">
+
+            </nav>
+        </div>
+    </header>
+
+    <!------------------- bread------------------->
+
+    <div class="menu">
+        <div class="bread">
+            <ol class="bread_list">
+                <li>
+                    <a href="./index.html">首頁</a>
+                </li>
+                <li>
+                    <a href="./member_center.html">會員專區</a>
+                </li>
+                <li>
+                    <a href="./cash.html">點數兌換</a>
+                </li>
+            </ol>
+        </div>
+        <!--------------------- reserve--------------------->
+
+        <div class="reserve">
+
+            <div class="reserve_daddy">
+
+                <h1>Reserve</h1>
+                <div class="reserve_pic">
+                    <img src="./image/reserve_4.jpg" alt="測試">
+                </div>
+
+                <div class="reserve_txt">
+                    <h3>預約注意事項</h3>
+                    <p>
+                        酒時伴刻
+                        <br>
+                        營業時間 : 19:00 ~ 04:00
+                        <br>
+                        包場或其他服務需求，請與我本人聯繫
+                        <br>
+                        若要取消預約，請於前一日12:00 AM前取消，取消次數超過三次，則列為黑名單
+                        <br>
+                        您提供的預約電話或Email若有誤，視為「訂位失敗」
+                        <br>
+                        若無事先取消而當天未來用餐者，日後無法再使用預約系統
+                        <br>
+                        未滿20歲禁止進入本場所，有家長同意也不行
+                        <br>
+                        可接受 現金| LINE pay | Apple pay | 信用卡
+                        <br>
+                    </p>
+                </div>
+
+                <div class="select_all">
+
+                    <div class="select_people_num">
+                        <select name="people" id="people" class="people">
+                            <option>選擇人數</option>
+                            <option>1 位大人</option>
+                            <option>2 位大人</option>
+                            <option>3 位大人</option>
+                            <option>4 位大人</option>
+                            <option>5 位大人</option>
+                            <option>6 位大人</option>
+                            <option>7 位大人</option>
+                            <option>8 位大人</option>
+                            <option>9 位大人</option>
+                            <option>10 位大人</option>
+                            <option>11 位大人</option>
+                            <option>12 位大人</option>
+                            <option>13 位大人</option>
+                            <option>14 位大人</option>
+                            <option>15 位大人</option>
+                            <option>16 位大人</option>
+                            <option>17 位大人</option>
+                            <option>18 位大人</option>
+                        </select>
+                    </div>
+
+                    <div class="select_people_room">
+                        <select name="room" id="room" class="room">
+                            <option>選擇包廂</option>
+                            <option>幻境之夜(4人)</option>
+                            <option>魔法之門(4人)</option>
+                            <option>時光迷宮(8人)</option>
+                            <option>神祕幻象(10人)</option>
+                            <option>幻彩星雲(10人)</option>
+                            <option>地獄之路(18人)</option>
+                            <option>無須包廂</option>
+                        </select>
+                    </div>
+                </div>
+
+                <input type="date" class="date" id="date" style="width: 100px;">
+
+
+                <p class="select_time">選擇時段</p>
+
+                <div class="btn_time">
+                    <button class="res_btn">19:00</button>
+                    <button class="res_btn">20:00</button>
+                    <button class="res_btn">21:00</button>
+                    <button class="res_btn">22:00</button>
+                    <button class="res_btn">23:00</button>
+                    <button class="res_btn">12:00</button>
+                    <button class="res_btn">01:00</button>
+                    <button class="res_btn">02:00</button>
+                </div>
+                <p class="remark">其他備註</p>
+                <textarea name="contact" id="contact" cols="30" rows="5"></textarea>
+
+                <button class="submit">送出預約</button>
+            </div>
+
+        </div>
+
+
+
+        <!--------------------- footer--------------------->
+
+        <footer class="footer">
+            <div class="footer_daddy">
+
+                <img src="./image/logo.svg" alt="LOGO圖片" class="logo_footer">
+
+
+                <div class="footer_text">
+                    <p>酒時</p> <br>
+                    <p>伴刻</p> <br>
+                </div>
+
+
+                <div class="footer_inf">
+                    <p>電話:(02) - 8678 1111</p>
+                    <p>地址:台北市信義區市府路8888號</p>
+                    <p>營業時間:19:00 ~ 04:00</p>
+                    <p>本網站為緯育Tibame「第87期」前端工程師專業技術養成班學員作品，僅供學習、展示之用途</p>
+
+                </div>
+
+
+                <div class="footer_social_media">
+                    <ul>
+                        <li>
+                            <a href="#" title="facebook icons">
+                                <img src="./image/icons/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" title="instagram icons">
+                                <img src="./image/icons/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" title="twitter icons">
+                                <img src="./image/icons/twitter.svg" alt="twitter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+
+        <button id="goTopButton" class="go-top-button">TOP</button>
+
+
+        <script>
+            // ----------- 表單內容 -----------
+            let submitButton = document.querySelector(".submit");
+
+            submitButton.addEventListener("click", function () {
+                let selectedPeople = document.querySelector(".people").value;
+                let selectedRoom = document.querySelector(".room").value;
+                let selectedDate = document.querySelector(".date").value;
+                let selectedTime = "";
+
+
+                let timeButtons = document.querySelectorAll(".res_btn");
+                timeButtons.forEach(function (button) {
+                    if (button.classList.contains("res1_btn")) {
+                        selectedTime += button.textContent + " ";
+                    }
+                });
+
+                let remark = document.querySelector("#contact").value;
+
+                let message = "訂位成功 ! 以下為您的訂單內容：\n";
+                message += "人數：" + selectedPeople + "\n";
+                message += "包廂：" + selectedRoom + "\n";
+                message += "日期：" + selectedDate + "\n";
+                message += "時段：" + selectedTime + "\n";
+                message += "其他備註：" + remark;
+
+                alert(message);
+            });
+
+
+            // ----------- go top -----------
+
+            $(document).ready(function () {
+                $(".res_btn").on("click", function () {
+                    $(this).toggleClass("res1_btn");
+                })
+            });
+
+            // gotop
+            const goTopButton = document.getElementById('goTopButton');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 200) {
+                    goTopButton.style.display = 'block';
+                } else {
+                    goTopButton.style.display = 'none';
+                }
+            });
+
+            goTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth',
+                });
+            });
+
+
+
+
+
+        </script>
+</body>
+
+</html>

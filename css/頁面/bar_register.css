@@ -1,0 +1,608 @@
+.theForm {
+    /* border: 1px solid red; */
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.all_item {
+    border: 3px solid white;
+    width: 50%;
+    background-color: rgba(49, 49, 49, 0.5);
+}
+
+.theForm legend {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.theForm .register {
+    /* border: 1px solid yellow; */
+    width: 80%;
+    color: white;
+    font: 20px Tahoma;
+    margin: 30px auto;
+}
+
+.theForm .register div {
+    margin: 30px auto;
+}
+
+
+
+input.Name[type="text"],
+input.account[type="text"],
+input.password[type="password"],
+input.email[type="email"],
+input.phone[type="text"] {
+    width: 60%;
+    height: 40px;
+    margin: 0 auto;
+}
+
+select.gender {
+    width: 60%;
+    height: 40px;
+    font-size: 16px;
+}
+
+label {
+    margin: 0 80px;
+}
+
+div.agree {
+    /* border: 1px solid white; */
+    color: white;
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+}
+
+div.agree a {
+    text-decoration: none;
+    color: rgb(248, 248, 158);
+}
+
+div.age {
+    /* border: 1px solid white; */
+    color: white;
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+}
+
+
+
+.agree_checkbox[type=checkbox] {
+    height: 12px;
+    width: 12px;
+}
+
+.btn {
+    /* border: 1px solid green; */
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.btn button {
+    width: 220px;
+    height: 30px;
+    font-size: 16px;
+    background-color: rgb(200, 200, 200);
+}
+
+.error {
+    color: rgb(253, 127, 127);
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* -------------------- RWD --------------------*/
+@media (min-width:1199.98px) and (max-width:1400px) {
+    .theForm {
+        /* border: 1px solid red; */
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all_item {
+        border: 3px solid white;
+        width: 60%;
+        background-color: rgba(49, 49, 49, 0.5);
+    }
+
+    .theForm legend {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .theForm .register {
+        /* border: 1px solid yellow; */
+        width: 60%;
+        color: white;
+        font: 20px Tahoma;
+        margin: 30px auto;
+    }
+
+    .theForm .register div {
+        margin: 20px auto;
+    }
+
+
+
+    input.Name[type="text"],
+    input.account[type="text"],
+    input.password[type="password"],
+    input.email[type="email"],
+    input.phone[type="text"] {
+        width: 80%;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    select.gender {
+        width: 80%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    label {
+        margin: 0 10px;
+    }
+
+    div.agree {
+        /* border: 1px solid white; */
+        color: white;
+        margin: 20px;
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+    }
+
+    div.agree a {
+        text-decoration: none;
+        color: rgb(248, 248, 158);
+    }
+
+    div.age {
+        /* border: 1px solid white; */
+        color: white;
+        margin: 20px;
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+    }
+
+    .agree_checkbox[type=checkbox] {
+        height: 12px;
+        width: 12px;
+    }
+
+    .btn {
+        /* border: 1px solid green; */
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .btn button {
+        width: 220px;
+        height: 30px;
+        font-size: 16px;
+        background-color: rgb(200, 200, 200);
+    }
+}
+
+@media (min-width:991.98px) and (max-width:1199.98px) {
+    .theForm {
+        /* border: 1px solid red; */
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all_item {
+        border: 3px solid white;
+        width: 80%;
+        background-color: rgba(49, 49, 49, 0.5);
+    }
+
+    .theForm legend {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .theForm .register {
+        /* border: 1px solid yellow; */
+        width: 80%;
+        color: white;
+        font: 20px Tahoma;
+        margin: 30px auto;
+    }
+
+    .theForm .register div {
+        margin: 30px auto;
+    }
+
+
+
+    input.Name[type="text"],
+    input.account[type="text"],
+    input.password[type="password"],
+    input.email[type="email"],
+    input.phone[type="text"] {
+        width: 80%;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    select.gender {
+        width: 80%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    label {
+        margin: 0 20px;
+    }
+
+    div.agree {
+        /* border: 1px solid white; */
+        color: white;
+        margin: 20px;
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+    }
+
+    div.agree a {
+        text-decoration: none;
+        color: rgb(248, 248, 158);
+    }
+
+    div.age {
+        /* border: 1px solid white; */
+        color: white;
+        margin: 20px;
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+    }
+
+    .agree_checkbox[type=checkbox] {
+        height: 12px;
+        width: 12px;
+    }
+
+    .btn {
+        /* border: 1px solid green; */
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .btn button {
+        width: 220px;
+        height: 30px;
+        font-size: 16px;
+        background-color: rgb(200, 200, 200);
+    }
+
+}
+
+@media (min-width:769px) and (max-width:991.98px) {
+    .theForm {
+        /* border: 1px solid red; */
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all_item {
+        border: 3px solid white;
+        width: 80%;
+        background-color: rgba(49, 49, 49, 0.5);
+    }
+
+    .theForm legend {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .theForm .register {
+        /* border: 1px solid yellow; */
+        width: 80%;
+        color: white;
+        font: 20px Tahoma;
+        margin: 30px auto;
+    }
+
+    .theForm .register div {
+        margin: 30px auto;
+    }
+
+
+
+    input.Name[type="text"],
+    input.account[type="text"],
+    input.password[type="password"],
+    input.email[type="email"],
+    input.phone[type="text"] {
+        width: 80%;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    select.gender {
+        width: 80%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    label {
+        margin: 0 20px;
+    }
+
+    div.agree {
+        /* border: 1px solid white; */
+        color: white;
+        margin: 20px;
+        /* justify-content: center; */
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+    }
+
+    div.agree a {
+        text-decoration: none;
+        color: rgb(248, 248, 158);
+    }
+
+    div.age {
+        /* border: 1px solid white; */
+        color: white;
+        margin: 20px;
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+    }
+
+    .agree_checkbox[type=checkbox] {
+        height: 12px;
+        width: 12px;
+    }
+
+    .btn {
+        /* border: 1px solid green; */
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .btn button {
+        width: 220px;
+        height: 30px;
+        font-size: 16px;
+        background-color: rgb(200, 200, 200);
+    }
+
+}
+
+
+@media (min-width:576px) and (max-width:768.98px) {
+    .theForm {
+        /* border: 1px solid red; */
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all_item {
+        border: 3px solid white;
+        width: 90%;
+        background-color: rgba(49, 49, 49, 0.5);
+    }
+
+
+
+    .theForm .register {
+        /* border: 1px solid yellow; */
+        width: 80%;
+        color: white;
+        font: 20px Tahoma;
+        margin: 30px auto;
+    }
+
+    .theForm .register div {
+        margin: 20px auto;
+    }
+
+
+
+    input.Name[type="text"],
+    input.account[type="text"],
+    input.password[type="password"],
+    input.email[type="email"],
+    input.phone[type="text"] {
+        width: 80%;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    select.gender {
+        width: 80%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    div.agree {
+        color: white;
+        margin: 20px;
+        /* justify-content: center; */
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+    }
+
+    div.agree a {
+        text-decoration: none;
+        color: rgb(248, 248, 158);
+    }
+
+    div.age {
+        color: white;
+        margin: 20px;
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+    }
+
+    .agree_checkbox[type=checkbox] {
+        height: 12px;
+        width: 12px;
+    }
+
+    .btn {
+        /* border: 1px solid green; */
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .btn button {
+        width: 220px;
+        height: 30px;
+        font-size: 16px;
+        background-color: rgb(200, 200, 200);
+    }
+
+}
+
+@media (min-width:375px) and (max-width:576px) {
+    .theForm {
+        /* border: 1px solid red; */
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all_item {
+        border: 3px solid white;
+        width: 90%;
+        background-color: rgba(49, 49, 49, 0.5);
+    }
+
+
+
+    .theForm .register {
+        /* border: 1px solid yellow; */
+        width: 80%;
+        color: white;
+        font: 20px Tahoma;
+        margin: 30px auto;
+    }
+
+    .theForm .register div {
+        margin: 20px auto;
+    }
+
+
+
+    input.Name[type="text"],
+    input.account[type="text"],
+    input.password[type="password"],
+    input.email[type="email"],
+    input.phone[type="text"] {
+        width: 80%;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    select.gender {
+        width: 80%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    div.agree {
+        /* border: 1px solid white; */
+        color: white;
+        margin: 20px;
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+    }
+
+    div.agree a {
+        text-decoration: none;
+        color: rgb(248, 248, 158);
+    }
+
+    div.age {
+        /* border: 1px solid white; */
+        color: white;
+        margin: 20px;
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+    }
+
+    .agree_checkbox[type=checkbox] {
+        height: 12px;
+        width: 12px;
+    }
+
+    .btn {
+        /* border: 1px solid green; */
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .btn button {
+        width: 220px;
+        height: 30px;
+        font-size: 16px;
+        background-color: rgb(200, 200, 200);
+    }
+
+}

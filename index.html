@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nine O'clock</title>
+  <link rel="stylesheet" href="./css/all/all.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/頁面/bar_frontpage.css">
+
+  <!--------------------- JS--------------------->
+
+  <script src="./js/code.jquery.com_jquery-3.7.1.js"></script>
+  <script scr="./js/jquery.hislide.js"></script>
+  <script src="./js/t.js"></script>
+  <script src="./js/all.js"></script>
+  <!-- <script src="./js/hamberger.js"></script> -->
+
+
+
+
+  <!--------------------- fonts--------------------->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <!-- 無襯線 -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--------------------- loading--------------------->
+  <div class="loader">
+    <div class="cup"></div>
+  </div>
+  <!--------------------- header--------------------->
+  <header class="header">
+
+    <div class="block">
+
+      <nav class="nav">
+        <a href="./index.html" class="logo"><img src="./image/logo2.svg" alt="首頁"></a>
+
+        <ul class="nav_list" id="ul_block">
+          <li><a href="./bar_news.html">最新消息</a></li>
+          <li><a href="./bar_about.html">品牌介紹</a></li>
+          <li><a href="./bar_consumption.html">消費方式</a></li>
+          <li><a href="./bar_type.html">餐點種類</a></li>
+          <li><a href="./bar_taste.html">如何品嘗</a></li>
+          <li><a href="./bar_member.html">會員專區</a></li>
+        </ul>
+        <img src="./image/icons/hamberger2.svg" alt="hamberger" class="hamberger" id="hamberger">
+
+        <img src="./image/icons/close.svg" alt="close" class="close" id="close">
+
+      </nav>
+    </div>
+  </header>
+
+  <!--------------------- banner--------------------->
+
+  <div class="banner">
+    <div class="banner_text">
+      <h1 id="text_h1">Nine</h1>
+      <h1 id="text_h2">O'clock</h1>
+      <h3 id="text_h3">Since 2023</h3>
+    </div>
+  </div>
+
+
+
+  <!----------------- menu bar----------------->
+  <div class="sec">
+    <div class="circle"></div>
+    <div class="content">
+      <div class="textBox">
+        <h2 id="textH2">Manhattan Starlight </h2><br>
+        <span id="textSpan">Flavor : whiskey, vermouth, and a touch of celestial magic.</span><br>
+        <!-- <p id="textP">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, similique?</p> -->
+        <a href="./bar_type.html">view all products</a>
+      </div>
+      <div class="imgBox">
+        <img src="./image/1.png" alt="test" class="beer">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li class="first"><img src="./image/1.png" alt="test"
+          onclick="imgSlider('./image/1.png');changeBgColor('#1e1e1e')"></li>
+      <li class="second"><img src="./image/2.png" alt="test"
+          onclick="imgSlider('./image/2.png');changeBgColor('#AAB8AB')"></li>
+      <li class="third"><img src="./image/3.png" alt="test"
+          onclick="imgSlider('./image/3.png');changeBgColor('#D4C3AA')"></li>
+    </ul>
+  </div>
+
+  <!--------------------- slogan--------------------->
+  <div class="slogan">
+    <div class="slogan_text">
+    </div>
+  </div>
+
+  <!--------------------- news card--------------------->
+  <main>
+
+    <!-- <div class="hi-prev"></div>
+    <div class="hi-next"></div> -->
+
+    <figure class="news_card one animate fadeUp reveal" id="card1">
+      <img src="./image/news_6.jpg" alt="news">
+      <div class="date">
+        <span></span>
+        <p>Sep 8, 2023</p>
+      </div>
+      <figcaption>
+        <h1>開幕優惠</h1>
+        <p>
+          本館於2022年9月8日盛大開幕，限時一周開賣優惠
+        </p>
+        <span class="read_more">
+          <a href="#">查看更多</a>
+        </span>
+      </figcaption>
+    </figure>
+
+    <figure class="news_card two animate fadeDown reveal" id="card2">
+      <img src="./image/news_2.jpg" alt="news">
+      <div class="date">
+        <span></span>
+        <p>Sep 12, 2023</p>
+      </div>
+      <figcaption>
+        <h1>新品嚐鮮</h1>
+        <p>
+          新上市的隱藏調酒，限時限量販售，把握機會
+        </p>
+        <span class="read_more">
+          <a href="#">查看更多</a>
+        </span>
+      </figcaption>
+    </figure>
+    <figure class="news_card one animate fadeUp reveal" id="card3">
+      <img src="./image/news_3.jpg" alt="news">
+      <div class="date">
+        <span></span>
+        <p>Sep 19, 2023</p>
+      </div>
+      <figcaption>
+        <h1>歡樂時光</h1>
+        <p>
+          說到歡樂時光，我想懂的人應該都懂，你說是吧？
+        </p>
+        <span class="read_more">
+          <a href="#">查看更多</a>
+        </span>
+      </figcaption>
+    </figure>
+    <figure class="news_card two animate fadeDown reveal" id="card4">
+      <img src="./image/news_4.jpg" alt="news">
+      <div class="date">
+        <span></span>
+        <p>Sep 25, 2023</p>
+      </div>
+      <figcaption>
+        <h1>店休通知</h1>
+        <p>
+          台北市正在修水管，本店暫無水可使用，所以公休一日。
+        </p>
+        <span class="read_more">
+          <a href="#">查看更多</a>
+        </span>
+      </figcaption>
+    </figure>
+
+  </main>
+
+
+
+  <!--------------------- footer--------------------->
+
+  <footer class="footer">
+    <div class="footer_daddy">
+
+      <img src="./image/logo.svg" alt="LOGO圖片" class="logo_footer">
+
+
+      <div class="footer_text">
+        <p>酒時</p> <br>
+        <p>伴刻</p> <br>
+      </div>
+
+
+      <div class="footer_inf">
+        <p>電話:(02) - 8678 1111</p>
+        <p>地址:台北市信義區市府路8888號</p>
+        <p>營業時間:19:00 ~ 04:00</p>
+        <p>本網站為緯育Tibame「第87期」前端工程師專業技術養成班學員作品，僅供學習、展示之用途</p>
+
+      </div>
+
+
+      <div class="footer_social_media">
+        <ul>
+          <li>
+            <a href="#" title="facebook icons">
+              <img src="./image/icons/facebook.svg" alt="facebook">
+            </a>
+          </li>
+
+          <li>
+            <a href="#" title="instagram icons">
+              <img src="./image/icons/instagram.svg" alt="instagram">
+            </a>
+          </li>
+
+          <li>
+            <a href="#" title="twitter icons">
+              <img src="./image/icons/twitter.svg" alt="twitter">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <button id="goTopButton" class="go-top-button">TOP</button>
+
+  <script>
+    // ---------- loading ----------
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader");
+
+      setTimeout(() => {
+        if (document.body.contains(loader)) {
+          loader.classList.add("loader--hidden");
+
+          loader.addEventListener("transitionend", () => {
+            if (document.body.contains(loader)) {
+              document.body.removeChild(loader);
+            }
+          });
+        }
+      }, 1800);
+    });
+
+    // ---------- t. ----------
+    $(function () {
+      $('#text_h1').t({
+        speed: 200,
+        delay: 2,
+        repeat: false,
+        pause_on_click: true,
+        caret: false,
+      })
+
+      $('#text_h2').t({
+        speed: 200,
+        delay: 3,
+        repeat: false,
+        pause_on_click: true,
+        caret: false,
+      })
+      $('#text_h3').t({
+        speed: 200,
+        delay: 5,
+        repeat: false,
+        pause_on_click: true,
+        caret: false,
+      })
+
+    })
+    // ---------- scroll fadeUp | fadeDown ----------
+    $(window).scroll(function () {
+      let scroll_top = $(window).scrollTop()
+      //console.log(scroll_top) // 830
+      if (scroll_top > 750) {
+        $('#card1').fadeIn()
+      } else {
+        $('#card1').fadeOut()
+      }
+      if (scroll_top > 750) {
+        $('#card2').fadeIn()
+      } else {
+        $('#card2').fadeOut()
+      } if (scroll_top > 750) {
+        $('#card3').fadeIn()
+      } else {
+        $('#card3').fadeOut()
+      } if (scroll_top > 750) {
+        $('#card4').fadeIn()
+      } else {
+        $('#card4').fadeOut()
+      }
+
+    });
+
+    function imgSlider(e) {
+      document.querySelector('.beer').src = e
+    }
+
+    function changeBgColor(color) {
+      const sec = document.querySelector('.sec')
+      sec.style.background = color;
+    }
+
+
+    let textH2 = document.querySelector('#textH2')
+    let textSpan = document.querySelector('#textSpan')
+
+    const thumbFirst = document.querySelector('.first')
+    thumbFirst.addEventListener('click', function () {
+      textH2.textContent = 'Manhattan Starlight'
+      textSpan.textContent = 'Flavor : whiskey, vermouth, and a touch of celestial magic.'
+      console.log(textSpan);
+
+    })
+    const thumbSecond = document.querySelector('.second')
+    thumbSecond.addEventListener('click', function () {
+      textH2.textContent = 'Emerald Green Tea'
+      textSpan.textContent = 'Flavor : A fruity blend with red wine.'
+    })
+    const thumbThird = document.querySelector('.third')
+    thumbThird.addEventListener('click', function () {
+      textH2.textContent = 'Big Apple Temptation'
+      textSpan.textContent = 'Flavor : A fruity blend with red wine.'
+    })
+
+
+    // gotop
+    const goTopButton = document.getElementById('goTopButton');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        goTopButton.style.display = 'block';
+      } else {
+        goTopButton.style.display = 'none';
+      }
+    });
+
+    goTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

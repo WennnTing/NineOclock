@@ -1,0 +1,38 @@
+/*------------------- 麵包屑-------------------*/
+.menu .bread {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    width: 100%;
+    padding: 0 60px;
+}
+
+.menu .bread>ol.bread_list {
+    list-style: none;
+    text-align: right;
+
+}
+
+.menu .bread ol.bread_list>li {
+    /* border: 1px solid blue; */
+    display: inline-block;
+    margin-right: 3px;
+    padding: 8px;
+
+    font-size: 12px;
+}
+
+.menu .bread ol.bread_list>li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu .bread ol.bread_list>li::before {
+    content: "|";
+    margin-right: 12px;
+    font-size: 16px;
+    color: white;
+}
+
+.bread_list>li:first-child::before {
+    display: none;
+}

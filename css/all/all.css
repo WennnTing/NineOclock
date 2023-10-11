@@ -1,0 +1,582 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    background-image: url(../../image/group1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*----------------header----------------*/
+
+
+.header {
+    /* border: 1px solid yellow; */
+    background: rgba(0, 0, 0, 0.75);
+    /* max-width: 1400px; */
+    /* position: fixed; */
+    width: 100%;
+    /* max-width: 100%; */
+}
+
+.header div.block {
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.header div.block nav.nav {
+    /* border: 3px solid green; */
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*-------------header sticky-------------*/
+header.header_sticky {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.98);
+    /* backdrop-filter: staturate(80%); */
+    animation: slidedown 0.8s ease-out;
+    opacity: .9;
+
+    width: 100%;
+    z-index: 9;
+}
+
+@keyframes slidedown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*---------------- logo ----------------*/
+
+header.header a.logo {
+    /* border: 1px solid black; */
+    font-size: 0;
+    display: inline-block;
+
+
+}
+
+header.header a.logo img {
+    height: 80px;
+    opacity: .9;
+}
+
+header.header a.logo img:hover {
+    opacity: 1.0;
+}
+
+/*---------------- 選單 ----------------*/
+header.header ul.nav_list {
+    /* border: 1px solid red; */
+    list-style: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+    font-size: 0;
+
+
+}
+
+header.header ul.nav_list>li {
+    /* border: 1px solid blue; */
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+header.header ul.nav_list>li a {
+    display: inline-block;
+    /* border: 1px solid rgb(195, 115, 29); */
+    text-decoration: none;
+    height: 60px;
+    padding: 0 20px;
+    color: rgb(255, 255, 255);
+    line-height: 60px;
+    position: relative;
+    letter-spacing: 0.5px;
+    /* text-shadow: 0 0 #000, 0 1.2em #1095c1; */
+    /* overflow: hidden; */
+    /* transition: .3s; */
+}
+
+/* ---------------- current-page ---------------- */
+
+ul.nav_list>li a.current-page::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(250, 236, 133);
+    height: 2px;
+    width: 73px;
+    transition: .5s;
+}
+
+ul.nav_list>li a.current-page::after {
+    left: 16px;
+    bottom: 14px;
+}
+
+
+
+/* ul.nav_list>li a.current-page:hover {
+    color: red;
+} */
+
+ul.nav_list>li a.current-page:hover::after,
+ul.nav_list>li a.current-page:hover::before {
+    width: 80%;
+}
+
+
+
+/* ul li hover */
+
+ul.nav_list>li a::before,
+ul.nav_list>li a::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(250, 236, 133);
+    height: 2px;
+    width: 0;
+    transition: .5s;
+}
+
+ul.nav_list>li a::after {
+    left: 8px;
+    bottom: 16px;
+}
+
+ul.nav_list>li a::before {
+    right: 14px;
+    top: 10px;
+}
+
+ul.nav_list>li a:hover {
+    color: red;
+}
+
+ul.nav_list>li a:hover::after,
+ul.nav_list>li a:hover::before {
+    width: 80%;
+}
+
+
+
+
+/* ---------------- 漢堡 ----------------*/
+img.hamberger {
+    height: 20px;
+    padding-right: 12px;
+    display: none;
+}
+
+img.close {
+    height: 20px;
+    padding-right: 12px;
+    display: none;
+}
+
+
+
+/*---------------- 漢堡end ----------------*/
+header.header ul.nav_list>li a:hover {
+    opacity: 1.0;
+}
+
+
+/* header RWD */
+@media (min-width:991.98px) and (max-width:1199.98px) {
+    .header {
+        width: 100%;
+    }
+
+    .header div.block {
+        width: 100%;
+    }
+
+    .header div.block nav.nav {
+        width: 100%;
+    }
+
+    header.header a.logo img {
+        height: 70px;
+    }
+
+    header.header ul.nav_list>li {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:768.98px) and (max-width:991.98px) {
+    .header {
+        width: 100%;
+    }
+
+    .header div.block {
+        width: 100%;
+    }
+
+    .header div.block nav.nav {
+        width: 100%;
+    }
+
+    header.header a.logo img {
+        height: 70px;
+    }
+
+    header.header ul.nav_list>li {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:769px) {
+    header.header ul.nav_list {
+        display: flex !important;
+    }
+}
+
+@media (max-width:768.98px) {
+    .header {
+        width: 100%;
+    }
+
+    .header div.block {
+        width: 100%;
+    }
+
+    .header div.block nav.nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    header.header a.logo img {
+        height: 60px;
+    }
+
+    header.header ul.nav_list {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+        order: 2;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        opacity: 95%;
+
+    }
+
+    header.header ul.nav_list>li {
+        display: block;
+        text-align: center;
+    }
+
+    img.hamberger {
+        display: block;
+        order: 1;
+    }
+}
+
+
+/* ---------------- footer---------------- */
+
+footer.footer {
+    /* border: 2px solid red; */
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 1900px;
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+    margin: 0;
+
+
+}
+
+.footer_daddy {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+}
+
+footer.footer img.logo_footer {
+    height: 200px;
+    margin: 10px 0 10px 0;
+    /* border: 1px solid green; */
+}
+
+footer.footer div.footer_text {
+    /* border: 1px solid yellow; */
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    overflow: hidden;
+    line-height: 40px;
+}
+
+
+/*酒時*/
+
+footer.footer div.footer_text p:first-child {
+    padding-top: 30px;
+    text-align: left;
+
+}
+
+/*伴客*/
+footer.footer div.footer_text p:nth-child(3) {
+    text-align: center;
+}
+
+
+
+/*調整第一個字的大小*/
+.footer_text p::first-letter {
+    font-size: 36px;
+}
+
+/*門市資料*/
+footer.footer div.footer_inf {
+    /* border: 1px solid blue; */
+    width: 680px;
+}
+
+footer.footer div.footer_inf>p {
+    color: white;
+    margin: 30px 0 0 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/*社群網站*/
+
+footer.footer div.footer_social_media {
+    /* border: 1px solid yellow; */
+    display: flex;
+    width: 300px;
+}
+
+footer.footer div.footer_social_media a img {
+    /* border: 1px solid red; */
+    width: 36px;
+    margin: 50px 10px 0 3px;
+
+}
+
+footer.footer div.footer_social_media ul {
+    /* border: 1px solid purple; */
+    display: flex;
+}
+
+@media (min-width:768.98px) and (max-width:991.98px) {
+    .footer_daddy {
+        /* border: 1px solid yellow; */
+        width: 100%;
+        /* display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0; */
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    footer.footer img.logo_footer {
+        height: 120px;
+        /* width: 100%; */
+        /* margin: 10px 0 0 20px; */
+        /* border: 1px solid green; */
+        align-self: center;
+    }
+
+    footer.footer div.footer_text {
+        /* border: 1px solid yellow; */
+        font-family: 'Pacifico', cursive;
+        color: white;
+        font-size: 12px;
+        align-self: center;
+        width: 100%;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    footer.footer div.footer_text p:first-child {
+        padding-top: 10px;
+        text-align: center;
+
+    }
+
+    footer.footer div.footer_text p:nth-child(3) {
+        text-align: center;
+    }
+
+    /*調整第一個字的大小*/
+    .footer_text p::first-letter {
+        font-size: 20px;
+    }
+
+    /*門市資料*/
+    footer.footer div.footer_inf {
+        /* font-size: 12px; */
+        width: 100%;
+    }
+
+    footer.footer div.footer_inf>p {
+        /* border: 1px solid white; */
+        color: white;
+        margin: 2px 0 0 0;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    footer.footer div.footer_social_media {
+        /* border: 1px solid yellow; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer.footer div.footer_social_media a img {
+        width: 36px;
+
+    }
+
+    footer.footer div.footer_social_media ul {
+        /* border: 1px solid purple; */
+        display: flex;
+    }
+}
+
+
+@media (max-width:768.98px) {
+    .footer_daddy {
+        /* border: 1px solid yellow; */
+        width: 100%;
+        /* display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer.footer img.logo_footer {
+        height: 120px;
+        /* width: 100%; */
+        /* margin: 10px 0 0 20px; */
+        /* border: 1px solid green; */
+        align-self: center;
+    }
+
+    footer.footer div.footer_text {
+        /* border: 1px solid yellow; */
+        font-family: 'Pacifico', cursive;
+        color: white;
+        font-size: 10px;
+        align-self: center;
+        width: 100%;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    footer.footer div.footer_text p:first-child {
+        padding-top: 10px;
+        text-align: center;
+
+    }
+
+    footer.footer div.footer_text p:nth-child(3) {
+        text-align: center;
+    }
+
+    /*調整第一個字的大小*/
+    .footer_text p::first-letter {
+        font-size: 20px;
+    }
+
+    /*門市資料*/
+    footer.footer div.footer_inf {
+        /* border: 1px solid blue; */
+        /* margin-left: 20px; */
+        width: 100%;
+    }
+
+    footer.footer div.footer_inf>p {
+        /* border: 1px solid white; */
+        color: white;
+        margin: 2px 0 0 0;
+        font-size: 14px;
+        /* line-height: 16px; */
+
+        padding: 5px;
+    }
+
+    footer.footer div.footer_social_media {
+        /* border: 1px solid yellow; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 200px; */
+    }
+
+    footer.footer div.footer_social_media a img {
+        /* border: 1px solid red; */
+        width: 36px;
+        /* margin: 180px 10px 0 30px; */
+
+    }
+
+    footer.footer div.footer_social_media ul {
+        /* border: 1px solid purple; */
+        display: flex;
+    }
+}
+
+
+
+/* gotop */
+.go-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.go-top-button:hover {
+    background-color: #686868;
+}
