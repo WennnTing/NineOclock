@@ -114,12 +114,15 @@ button {
     border-radius: 10px;
     outline: none;
     border: 2px solid #fff8b6;
+    background-color: white;
+    color: black;
 }
 
 button:hover {
     background-color: #fff8b6;
     outline: none;
     border: 2px solid white;
+    color: black;
 }
 
 .cash_products p {

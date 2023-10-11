@@ -94,6 +94,8 @@
 .date {
     background-color: lightyellow;
     border-radius: 10px;
+    color: black;
+
 }
 
 .date {
@@ -112,6 +114,7 @@
     margin-left: 6px;
     border: 1px solid white;
     border-radius: 10px;
+    color: black;
 }
 
 
@@ -159,6 +162,8 @@ textarea:focus {
     border-radius: 10px;
     width: 100px;
     margin-bottom: 20px;
+    color: black;
+
 }
 
 .submit:hover {

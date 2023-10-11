@@ -47,6 +47,7 @@ function validate(e) {
 
         document.querySelector('form').reset();
         alert('註冊成功');
+        window.location.href = './bar_member.html'
     } else {
         // 抓錯誤 顯示錯誤消息
         if (!isNameValid) {
