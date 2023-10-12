@@ -19,7 +19,7 @@ function validate(e) {
     let isGenderValid = gender.selectedIndex != 0;
 
     if (isNameValid && isAccountValid && isPasswordValid && isEmailValid && isPhoneValid && isGenderValid) {
-        // 從 localStorage 中檢索現有的使用者數據
+        // 從 localStorage 中抓現有的使用者數據
         let existingData = localStorage.getItem('userData');
 
         // 解析現有數據，如果不存在，則初始化為空數組
